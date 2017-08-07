@@ -1,0 +1,171 @@
+//float menu items to the right
+#navbarNavDropdown {
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+}
+
+
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+
+body {
+	font-size: 18px;
+	overflow-x: hidden;
+	font-family: 'Rubik', sans-serif;
+	// color: #252E3D;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Trirong', serif;
+}
+
+.video-wrapper {
+	position: relative;
+}
+
+.video-wrapper h2, 
+.video-wrapper h1  {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.video-wrapper .header-icon {
+	margin-top: 50px;
+}
+
+.video-wrapper video {
+	min-height: 100%; 
+	min-width: 100%; 
+	width: auto; 
+	height: auto;
+}
+
+.navbar-inverse {
+  background-color: #576D9C !important; 		
+  //height: 80px !important;
+  border-bottom: 3px solid #f8c051 !important;
+}
+
+.navbar-inverse .navbar-toggler {
+	//margin-top: 24px;
+	border-color: #f8c051;
+	border-width: 2px;
+}
+
+.navbar-inverse.navbar-toggle .icon-bar {
+	background-color: #f8c051;
+}
+
+
+.custom-logo-link img {
+	width: 220px;
+}
+
+.section-tile, 
+.anchor-tiles .card {
+	margin-top: 15px; 
+	width: 100%; 
+	height: 100%; 
+}
+
+.section-tile .panel-default {
+	position: relative;
+	height: 100%; 
+	width: 100%; 
+	background-color: black; 
+	min-height: 300px;
+	max-height: 300px; 
+	color: white;
+	text-align: center; 
+	transition: background-size .5s; 
+
+
+}
+.section-tile .panel-default .panel-body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.3);
+
+}
+
+.section-tile .panel-transparency {
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	top: 0; 
+	left: 0; 
+	background-color: rgba(0, 0, 0, .3); 
+	display: none; 
+
+}
+
+.section-tile .panel-body > a {
+ 	color: #fff; 
+}
+
+.section-tile h2 {
+	margin-top: 10%; 
+}
+
+.footer {
+	margin-top: 30px;
+	padding: 30px;
+	min-height: 300px;
+	background-color: #576D9C; 
+}
+
+.footer h3, 
+.footer h2 {
+	color: #f8c051
+}
+
+// Focus Area Tiles 
+
+.section-tile .panel-body h2, 
+.tile-text {
+	opacity: 0; 
+	transition: all 500ms; 
+}
+
+.section-tile:hover .panel-transparency {
+	display: block; 
+}
+
+.section-tile:hover  .panel-default {
+	transform: scale(1.025); 
+}
+
+.section-tile:hover  .panel-body  .tile-text, 
+.section-tile:hover  .panel-body  h2 {
+	opacity: 1; 
+}
+
+@include media-breakpoint-up(lg) {
+	h3 {
+		//color:white;
+	}
+}
+
+.content-section {
+	margin-bottom: 3.5rem; 
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: $brand-secondary;
+    border-color: darken($brand-secondary, 15%);
+}
+
+.btn-secondary:hover {
+	color: #fff;
+    background-color: darken($brand-secondary, 15%);
+    border-color: darken($brand-secondary, 25%);
+}
+
+
+
