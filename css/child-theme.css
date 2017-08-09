@@ -9347,6 +9347,9 @@ h1, h2, h3, h4, h5 {
 .content-section {
   margin-bottom: 3.5rem; }
 
+.content-section h3 {
+  margin-bottom: 2rem; }
+
 .btn-secondary {
   color: #fff;
   background-color: #f8c051;
@@ -9356,3 +9359,27 @@ h1, h2, h3, h4, h5 {
   color: #fff;
   background-color: #f3a50a;
   border-color: #c28308; }
+
+.navigation .card-deck .card {
+  color: #fff;
+  background-color: #576D9C;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: #576D9C; }
+
+.navigation .card-deck a:hover {
+  color: #f8c051;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 3px solid #f8c051; }
+
+.jumbotron.header-img {
+  min-height: 500px;
+  background-size: cover;
+  backgrond-repeat: no-repeat; }
+
+.jumbotron.header-img .header-text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff; }

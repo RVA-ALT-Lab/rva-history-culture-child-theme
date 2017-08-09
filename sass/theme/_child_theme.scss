@@ -155,6 +155,10 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 3.5rem; 
 }
 
+.content-section h3 {
+	margin-bottom: 2rem;
+}
+
 .btn-secondary {
     color: #fff;
     background-color: $brand-secondary;
@@ -167,5 +171,31 @@ h1, h2, h3, h4, h5 {
     border-color: darken($brand-secondary, 25%);
 }
 
+.navigation .card-deck .card {
+	color: #fff; 
+	background-color: $brand-primary; 
+	box-sizing: border-box; 
+	border-width: 3px; 
+	border-color: $brand-primary; 
+}
+.navigation .card-deck a:hover {
+	color: $brand-secondary; 
+	box-sizing: border-box; 
+	text-decoration: none; 
+	border: 3px solid $brand-secondary; 
+}
+
+.jumbotron.header-img {
+	min-height: 500px; 
+	background-size: cover; 
+	backgrond-repeat: no-repeat; 
+}
+
+.jumbotron.header-img .header-text {
+	width: 100%; 
+	height: 100%;
+	text-align:center; 
+	color: #fff; 
+}
 
 

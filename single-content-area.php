@@ -21,6 +21,17 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
 
+<div class="jumbotron header-img" style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(<?php echo get_the_post_thumbnail_url(); ?>);">
+
+<div class="header-text">
+	<h1><?php the_title(); ?></h1>
+</div>
+	
+</div>
+
 <div class="wrapper" id="wrapper-index">
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
@@ -38,42 +49,55 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					<?php $main_title = get_the_title();  ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
-
-					<h2><?php the_title(); ?></h2>
 					
 					<div class="content-section">
 						<?php the_content(); ?>
 					</div>
 					<div class="content-section navigation hidden-sm-down">
 						<div class="card-deck">
-									<div class="card">
-									<a href="#learn-more">		
-										<img src="https://elearningindustry.com/wp-content/uploads/2016/09/challenges-of-mobile-learning-corporate-training.jpeg" class="card-img-top">
+									<a class="card text-center" href="#learn-more">
+											<div class="card-block">
+											<i class="fa fa-university fa-4x"></i>
+												<br>
+												</br>	
+												<h5 class="card-text">
+													Learn More
+												</h5>
+											</div>	
+									</a>
+									<a class="card text-center" href="#get-involved">
 										<div class="card-block">
+										<i class="fa fa-users fa-4x"></i>
+											<br>
+											<br>	
 											<p class="card-text">
-												Learn More
+												Get Involved
 											</p>
 										</div>
-									</a>	
-									</div>
-									<div class="card">
-									<img src="https://elearningindustry.com/wp-content/uploads/2016/09/challenges-of-mobile-learning-corporate-training.jpeg" class="card-img-top">
+									</a>
+						</div>
+						<br>
+						<div class="card-deck">
+									<a class="card text-center" href="#test-knowledge">	
 										<div class="card-block">
-											Get Involved
-										</div>
-									</div>
-									<div class="card">
-									<img src="https://elearningindustry.com/wp-content/uploads/2016/09/challenges-of-mobile-learning-corporate-training.jpeg" class="card-img-top">
+											<i class="fa fa-question fa-4x"></i>
+											<br>
+											<br>
+											<p class="card-text">
+												Test Your Knowledge
+											</p>
+										</div>	
+									</a>
+									<a class="card text-center" href="#work-samples">
 										<div class="card-block">
-											Test Your Knowledge
-										</div>
-									</div>	
-									<div class="card">
-									<img src="https://elearningindustry.com/wp-content/uploads/2016/09/challenges-of-mobile-learning-corporate-training.jpeg" class="card-img-top">
-										<div class="card-block">
-											Faculty & Student Engagement
-										</div>
-									</div>
+										<i class="fa fa-graduation-cap fa-4x"></i>
+										<br>
+										<br>
+											<p class="card-text">
+												Faculty and Student Work
+											</p>
+										</div>		
+									</a>							
 						</div>
 					</div>
 				
@@ -100,6 +124,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				<?php endif; ?>
 				<div class="content-section">
 					<h3>Faculty and Student Involvement</h3><a name="work-samples"></a>
+					<div class="card-deck">
 					<?php 
 					$args = array(
 						'post_type' => 'work-sample', 
@@ -120,7 +145,16 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 						<!-- the loop -->
 						<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-							<h4><?php the_title(); ?></h4>
+							<div class="card text-center">
+								<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="card-img-top">
+								<div class="card-block">
+									<h4 class="card-title"><?php the_title(); ?></h4>
+									
+									<p><?php the_terms(get_the_ID(), 'work-sample-tags', 'Tagged with ', ', '); ?></p>
+
+									<a href="<?php the_permalink(); ?>" class="btn btn-secondary"> Read More</a>
+								</div>
+							</div>
 							<!-- TODO: Come up with some formatting here for faculty student -->
 
 						<?php endwhile; ?>
@@ -133,6 +167,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					<?php else : ?>
 						<p><?php _e( 'Sorry, no posts matched your criteria. Inside WP loop...' ); ?></p>
 					<?php endif; ?>
+					</div><!-- End Card Deck -->
 				</div>
 			</main><!-- #main -->
 			</div>
