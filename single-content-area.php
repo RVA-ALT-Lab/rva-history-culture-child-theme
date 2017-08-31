@@ -27,7 +27,11 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
     ), url(<?php echo get_the_post_thumbnail_url(); ?>);">
 
 <div class="header-text">
-	<h1><?php the_title(); ?></h1>
+	<h1><?php the_title(); ?>
+		<br>
+		<br>
+		<i class="fa fa-chevron-down"></i>
+	</h1>
 </div>
 	
 </div>
@@ -102,16 +106,16 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					</div>
 				
 				<div class="content-section">
-					<h3>Learn More</h3><a name="learn-more"></a>
+					<h3>Learn More</h3><a id="learn-more" name="learn-more"></a>
 
+					<?php the_field('learn_more'); ?>
+				</div>
+				<div class="content-section">
+					<h3>Get Involved</h3><a id="get-involved" name="get-involved"></a>
 					<?php the_field('get_involved'); ?>
 				</div>
 				<div class="content-section">
-					<h3>Get Involved</h3><a name="get-involved"></a>
-					<?php the_field('get_involved'); ?>
-				</div>
-				<div class="content-section">
-					<h3>Test Knowledge</h3><a name="test-knowledge"></a>
+					<h3>Test Knowledge</h3><a id="test-knowledge" name="test-knowledge"></a>
 					<?php echo do_shortcode(the_field('quiz_shortcode_')); ?>
 				</div>
 
@@ -123,7 +127,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 				<?php endif; ?>
 				<div class="content-section">
-					<h3>Faculty and Student Involvement</h3><a name="work-samples"></a>
+					<h3>Faculty and Student Involvement</h3><a id="work-samples" name="work-samples"></a>
 					<div class="card-deck">
 					<?php 
 					$args = array(

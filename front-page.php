@@ -21,10 +21,10 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
 <div class="video-wrapper">
-    <h1>Explore opportunities RVA has to offer
+    <h1>Community Engaged Learning in RVA
     <br>
     <br>
-    <span class="glyphicon glyphicon-chevron-down header-icon"></span>
+    <i class="fa fa-chevron-down"></i>
     </h1>
     	<video autoplay="" loop="" muted="" preload="">
     		<source src="https://rampages.us/rva-culture/wp-content/uploads/sites/24118/2017/04/Richmond-VA-from-above-RVA.mp4" type="video/mp4">
@@ -76,6 +76,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 				</div>
 			<?php endwhile; ?>
 
+			<?php wp_reset_postdata(); ?>
+
 			</div>
 
 			</div>
@@ -83,11 +85,9 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 		<hr>
     	<div class="row">
     		<div class="col-lg-12">
-    			<h2>Pulse Line Interactive</h2>
-    			<p>Make some room here for some primer text....</p>
-    			<p>Something else </p>
-    			<p class="pull-right">Legend Text or Tooltip</p>
-    			<img src="<?php echo get_template_directory_uri() . '/img/pulse-line3.svg'; ?>" width="100%" height="100%">
+    			<h2>Pulse Bus Line (GRTC) </h2>
+    			<p>The Pulse bus line, which is scheduled for completion in June 2018, will act as a spine through the Richmond metro area, connecting Richmond's early beginnings at Rockett's Landing with the West End at Willow Lawn. You can <a href="http://ridegrtc.com/brt/brt-now">learn more about the Pulse Line here</a></p>
+    			<img src="<?php echo get_stylesheet_directory_uri() . '/img/pulse-line3.svg'; ?>" width="100%" height="100%">
 
 <br>
 <br>
@@ -96,6 +96,52 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
     		</div>
     		
     	</div>
+    	<!-- <div class="row">
+    		<div class="col-lg-12">
+    			<h2>Community Engaged Teaching</h2>
+    			<p>Here are a few examples of the community engaged teaching being done by faculty from around the RVA area.</p>
+    			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner" role="listbox">
+				    
+				  	<?php 
+						$work_sample_args = array('post_type' => 'work-sample'); 
+						$work_sample_wp_query = new WP_Query($work_sample_args); 
+						$first_post = false; 
+					?>
+
+
+					<?php while($work_sample_wp_query->have_posts()): ?>
+
+						<?php $work_sample_wp_query->the_post(); ?>
+						<div class="carousel-item">
+		                Todo: implement the rest of the tiles with a link surrounding the .panel.panel-default 1
+		                <img class="d-block img-fluid" src="<?php echo the_post_thumbnail_url(); ?>" alt="First slide">   			
+						</div>
+					<?php endwhile; ?>
+
+					<?php wp_reset_postdata(); ?>
+				  
+
+
+
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+
+    			
+    		</div>
+    		
+    	</div> -->
+    
+	<p>Drone footage by <a href="http://www.creativedogmedia.com/">Creative Dog Media</a></p>
     </div>
 
 </div><!-- Container end -->

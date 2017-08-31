@@ -18,6 +18,7 @@ function theme_enqueue_styles() {
 
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
+    wp_enqueue_script( 'extras', get_stylesheet_directory_uri() . '/js/extras.js', array(), $the_theme->get( 'Version' ), true );
 }
 
 /**
@@ -71,8 +72,8 @@ function create_custom_taxonomy(){
 		'work-sample-tags', 
 		'work-sample', 
 		array(
-			'label' => __('Tags', CURRENT_THEME), 
-			'singular_name' => __('Tag', CURRENT_THEME),  
+			'label' => 'Tags', 
+			'singular_name' => 'Tag',  
 			'hierarchical' => false, 
 			'rewrite' => true, 
 			'query_var' => true
