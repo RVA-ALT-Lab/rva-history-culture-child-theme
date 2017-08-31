@@ -21,7 +21,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
 <div class="video-wrapper">
-    <h1>Community Engaged Learning in RVA
+    <h1>Context Matters - An Orientation to RVA
     <br>
     <br>
     <i class="fa fa-chevron-down"></i>
@@ -47,6 +47,9 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	</div><!-- .row -->
 	<div class="row">
     	<div class="col-lg-12">
+    		<br>
+    		<p class="lead">This website seeks to orient the higher education community to the history and culture of Richmond, Virginia (RVA) as a first step to rich engagement.</p>
+    		<br>
 			<h2>Focus Areas</h2>
             <p></p>
 			<div class="row">
@@ -79,10 +82,15 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			<?php wp_reset_postdata(); ?>
 
 			</div>
+			<br>
+			<br>
+			<p class="lead text-center">
+				This site is not exhaustive. Suggestions and additions are welcomed. Send to <a href="mailto:engage@vcu.edu">engage@vcu.edu</a>.
+			</p>
 
 			</div>
 		</div>
-		<hr>
+<!-- 		<hr>
     	<div class="row">
     		<div class="col-lg-12">
     			<h2>Pulse Bus Line (GRTC) </h2>
@@ -95,7 +103,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
     			<br>
     		</div>
     		
-    	</div>
+    	</div> -->
     	<!-- <div class="row">
     		<div class="col-lg-12">
     			<h2>Community Engaged Teaching</h2>
