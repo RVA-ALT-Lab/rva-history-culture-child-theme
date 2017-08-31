@@ -149,7 +149,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
     		
     	</div> -->
     
-	<p>Drone footage by <a href="http://www.creativedogmedia.com/">Creative Dog Media</a></p>
+	<p class="text-center">Drone footage by <a href="http://www.creativedogmedia.com/">Creative Dog Media</a></p>
     </div>
 
 </div><!-- Container end -->
