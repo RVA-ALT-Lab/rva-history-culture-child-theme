@@ -9267,15 +9267,20 @@ h1, h2, h3, h4, h5 {
   width: auto;
   height: auto; }
 
-.navbar-inverse {
+.navbar-dark {
   background-color: #576D9C !important;
   border-bottom: 3px solid #f8c051 !important; }
 
-.navbar-inverse .navbar-toggler {
+.navbar-dark #main-menu a {
+  color: #fff; }
+  .navbar-dark #main-menu a:hover, .navbar-dark #main-menu a:focus {
+    color: #f8c051; }
+
+.navbar-dark .navbar-toggler {
   border-color: #f8c051;
   border-width: 2px; }
 
-.navbar-inverse.navbar-toggle .icon-bar {
+.navbar-dark .navbar-toggler-icon {
   background-color: #f8c051; }
 
 .custom-logo-link img {
