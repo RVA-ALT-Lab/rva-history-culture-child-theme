@@ -44,13 +44,13 @@ h1, h2, h3, h4, h5 {
 	height: auto;
 }
 
-.navbar-dark {
+.navbar-inverse {
   background-color: #576D9C !important; 		
   //height: 80px !important;
   border-bottom: 3px solid #f8c051 !important;
 }
 
-.navbar-dark #main-menu a {
+.navbar-inverse #main-menu a {
 	color: #fff; 
 
 	&:hover, 
@@ -62,15 +62,15 @@ h1, h2, h3, h4, h5 {
 
 
 
-.navbar-dark .navbar-toggler {
+.navbar-inverse .navbar-toggler {
 	//margin-top: 24px;
 	border-color: #f8c051;
 	border-width: 2px;
 }
 
-.navbar-dark .navbar-toggler-icon {
-	background-color: #f8c051;
-}
+// .navbar-inverse .navbar-toggler-icon {
+// 	background-color: #f8c051;
+// }
 
 
 .custom-logo-link img {
@@ -217,6 +217,11 @@ h1, h2, h3, h4, h5 {
 
 .jumbotron.header-img a {
 	color: #fff;  
+}
+
+.new-rule {
+	display: none;
+	display: block;
 }
 
 

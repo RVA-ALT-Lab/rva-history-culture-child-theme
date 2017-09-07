@@ -9267,21 +9267,18 @@ h1, h2, h3, h4, h5 {
   width: auto;
   height: auto; }
 
-.navbar-dark {
+.navbar-inverse {
   background-color: #576D9C !important;
   border-bottom: 3px solid #f8c051 !important; }
 
-.navbar-dark #main-menu a {
+.navbar-inverse #main-menu a {
   color: #fff; }
-  .navbar-dark #main-menu a:hover, .navbar-dark #main-menu a:focus {
+  .navbar-inverse #main-menu a:hover, .navbar-inverse #main-menu a:focus {
     color: #f8c051; }
 
-.navbar-dark .navbar-toggler {
+.navbar-inverse .navbar-toggler {
   border-color: #f8c051;
   border-width: 2px; }
-
-.navbar-dark .navbar-toggler-icon {
-  background-color: #f8c051; }
 
 .custom-logo-link img {
   width: 220px; }
@@ -9394,3 +9391,7 @@ h1, h2, h3, h4, h5 {
 
 .jumbotron.header-img a {
   color: #fff; }
+
+.new-rule {
+  display: none;
+  display: block; }
